@@ -154,27 +154,28 @@ this script will support argparse and/or be created into a lib/.
 Eventually, I plan to include an application that can crawl the entire internet, detect 
 websites and scan each while generating results into a report. ....maybe?
 
-Yes, I know after training the model it says the accuracy is 95% but is not always 95%. 
-..but 95% of what, in reality?
+Yes, I know after training the model it says the accuracy is 95% but it is not always 95%. 
+..but 95% compared to what, in reality?
 
 I could grab 50 URLs that are obvious to the eye and obtain 100% accuracy in the results.
 I could grab 50 random URLS and get ~50% accuracy.
-I could grab 50 super smart URLs by intelligent threat actors and got 10% accuracy.
+I could grab 50 super smart URLs by intelligent threat actors and get 10% accuracy, if I am lucky.
 
-AI is a joke! It is only as good as the dataset and smart as programmers design it to be
+AI is a joke! It is only as smart as the dataset and good as the programmers design it to be
 ...but it does work to some extent when completely randomized. 
 
 Threat actors are just as capable as the blue teams. Don't think, they aren't using 
-the same codes and datasets to test and craft the perfect URL to circumvent these types tools.
+the same codes and datasets to test and craft the perfect URLs to circumvent these 
+types of tools.
 
 I would...
 
 After all, this is based off of a public, publication...
 
-The example here is nearly 55% accuracy, and some of these URLs are pretty smart. Again, 
+The example below is nearly 55% accuracy, and some of these URLs are pretty smart. Again, 
 how good is the competition creating the Phishing sites?
 
-That's just how I feel about it after my experience of writing AI for the first time.
+That's just how I feel about it after my experience in writing AI for the first time.
 
 Nothing is perfect in an imperfect world..but what do I know?
 
