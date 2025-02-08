@@ -145,3 +145,73 @@ Length of URL: 43 : https://welcome-doc-exodus.github.io/en-us/
     "web_traffic": 1
 }
 ```
+
+## Run Phish Hunter
+
+For now, you need to modify this script to include the URLs you want to scan. Soon enough,
+this script will support argparse and/or be created into a lib/.
+
+Eventually, I plan to include an application that can crawl the entire internet, detect 
+websites and scan each while generating results into a report. ....maybe?
+
+Yes, I know after training the model it says the accuracy is 95% but is not always 95%. 
+..but 95% of what, in reality?
+
+I could grab 50 URLs that are obvious to the eye and obtain 100% accuracy in the results.
+I could grab 50 random URLS and get ~50% accuracy.
+I could grab 50 super smart URLs by intelligent threat actors and got 10% accuracy.
+
+AI is a joke! It is only as good as the dataset and smart as programmers design it to be
+...but it does work to some extent when completely randomized. 
+
+Threat actors are just as capable as the blue teams. Don't think, they aren't using 
+the same codes and datasets to test and craft the perfect URL to circumvent these types tools.
+
+I would...
+
+After all, this is based off of a public, publication...
+
+The example here is nearly 55% accuracy, and some of these URLs are pretty smart. Again, 
+how good is the competition creating the Phishing sites?
+
+That's just how I feel about it after my experience of writing AI for the first time.
+
+Nothing is perfect in an imperfect world..but what do I know?
+
+Have fun,
+
+```bash
+$ python phish_hunter.py
+[-] 1 - https://mondialrelaylivraison.net/ is PHISH: False
+[-] 2 - https://verif0785portal.info/purduefeds is PHISH: False
+[*] 3 - https://www.irs.gov.tax-sioe.com/ is PHISH: True
+[-] 4 - https://rebrand.ly/gpdpcxz is PHISH: False
+[-] 5 - https://gt.membersitogo.4pu.com/plan is PHISH: False
+[*] 6 - http://allegrolokalnie.pl-4637347.icu is PHISH: True
+[-] 7 - https://serve.tigo-gt.top/gt?hWK=RyR4orilLs is PHISH: False
+[*] 8 - http://allegrolokalnie.pl-oferta9431404.cfd is PHISH: True
+[-] 9 - http://d0pd.841518.cfd/ is PHISH: False
+[-] 10 - https://welcome-doc-exodus.github.io/en-us/ is PHISH: False
+[*] 11 - https://s-push-erneuerung.com/ is PHISH: True
+[*] 12 - https://bigalmechanical.com/-/dbag/ is PHISH: True
+[*] 13 - https://package-expressdh.com/captcha/captcha.php is PHISH: True
+[*] 14 - https://docs.google.com/presentation/d/e/2PACX-1vTr4Eb70TIUMSkdwL9Q2twDWru9LVq6C_4dj2g_xQ_12QoHrbeH-p9Fw9eJ2vGUFKiP64-eTSb1r1hS/pub?start=false&loop=false&delayms=3000 is PHISH: True
+[-] 15 - https://f6d19e18.outh-sam20.pages.dev/ is PHISH: False
+[-] 16 - https://e025441b.currentllyy.pages.dev/ is PHISH: False
+[-] 17 - https://metanetfixx.pages.dev/connect is PHISH: False
+[*] 18 - https://package-expressdh.com/captcha/captcha.php is PHISH: True
+[*] 19 - http://vz2wssfi.r.us-east-1.awstrack.me/L0/9uy8t76dytxcvyubhijpohikgnytrgwsdtyuigohojigu.pages.dev%2F%3FD5kcy5grsNUHE0gZ4sKOUP4jkHyJXMDitQmieP5mgGRvzlGSgmUwAl/1/01000194dd66b512-c7ca596e-9acd-4604-8b07-178de31095b1-000000/CuLVPdOnU5xiffpFq3V-MyrkJAc=412 is PHISH: True
+[-] 20 - http://itauresgatedepontos.dynv6.net/ is PHISH: False
+[*] 21 - https://disponivelparavoce.dynv6.net/cliente/cadrastro.php?codigo=XIHl7gXN4LkHDgTmq2xJu6ZWU-pFJCfIKE0oMWT3YFdKF is PHISH: True
+[*] 22 - https://duxyy3sx96.com/index/login/login/token/e116e1304ce834694c37f2c53778894d.html is PHISH: True
+[*] 23 - https://z7r7433fo3.vip/index/login/login/token/e116e1304ce834694c37f2c53778894d.html is PHISH: True
+[*] 24 - https://duxyy3sx96.vip/index/login/login/token/e116e1304ce834694c37f2c53778894d.html is PHISH: True
+[*] 25 - https://rzs6ji6bq0.vip/index/login/login/token/e116e1304ce834694c37f2c53778894d.html is PHISH: True
+[*] 26 - https://tldbrrqcmj.vip/index/login/login/token/e116e1304ce834694c37f2c53778894d.html is PHISH: True
+[-] 27 - https://slgndocline.onlxtg.com/87300038978/ is PHISH: False
+[-] 28 - https://viaoceanica.com/jpd/index.htm is PHISH: False
+[-] 29 - http://sjfqvcxbee.cfolks.pl/ab/ar is PHISH: False
+[*] 30 - https://pay.shopeeprodutos.site/lDW0ZaKOBaQgN7E?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=&subid=&sid2=&subid2=&subid3=&subid4=&subid5=&xcod=&sck= is PHISH: True
+[*] 31 - https://pay.pagmenos.site/YEwR3ADR7dogdKy?utm_source=organic&utm_campaign=rKm-km-rKm&utm_medium=&utm_content=&utm_term=&xcod=jLj67a1f0eef317b016cee2cca3hQwK21wXxRrKm-km-rKmhQwK21wXxRhQwK21wXxRhQwK21wXxR&sck=jLj67a1f0eef317b016cee2cca3hQwK21wXxRrKm-km-rKmhQwK21wXxRhQwK21wXxRhQwK21wXxR is PHISH: True
+[-] 32 - https://f6d19e18.outh-sam20.pages.dev/?id=ev7BHk51p2 is PHISH: False
+```

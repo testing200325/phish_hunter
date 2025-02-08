@@ -45,11 +45,8 @@ for link in links:
     note = False
 
     fe = FeatureExtraction(link)
-    #try:
+
     prediction = p.make_prediction(data=fe.getFeaturesArray())
-    #except Except as err:
-    #    prediction = False
-    #    note = err
 
     if prediction is True:
         print(f"[*] {count} - {link} is PHISH: {prediction}")
