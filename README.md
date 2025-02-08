@@ -35,8 +35,22 @@ the desire to do so.
 Enjoy
 
 ## Getting Started
-Install instructions and all the cool shit goes here....
 
+Clone the repository, create your Python Virtual Environment, install the requirements
+and run.
+
+```bash
+git clone https://github.com/h4cklife/phish_hunter.git
+...
+
+$ cd phish_hunter
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+...
+
+$ python phish_hunter.py
+```
 
 ## Use cases
 
@@ -114,7 +128,7 @@ options:
 ```
 
 ```bash
-python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/
+$ python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/
 Length of URL: 43 : https://welcome-doc-exodus.github.io/en-us/
 {
     "having_IP_Address": -1,
@@ -159,12 +173,9 @@ Yes, I know after training the model it says the accuracy is 95% but it is not a
 
 I could grab 50 URLs that are obvious to the eye and obtain 100% accuracy in the results.
 I could grab 50 random URLS and get ~50% accuracy.
-I could grab 50 super smart URLs by intelligent threat actors and get 10% accuracy, if I am lucky.
+I could grab 50 super smart URLs by intelligent threat actors and get ~10% accuracy.
 
-AI is a joke! It is only as smart as the dataset and good as the programmers design it to be
-...but it does work to some extent when completely randomized. 
-
-Threat actors are just as capable as the blue teams. Don't think, they aren't using 
+Threat actors are just as capable as the blue teamers. Don't think, they aren't using 
 the same codes and datasets to test and craft the perfect URLs to circumvent these 
 types of tools.
 
@@ -172,12 +183,8 @@ I would...
 
 After all, this is based off of a public, publication...
 
-The example below is nearly 55% accuracy, and some of these URLs are pretty smart. Again, 
-how good is the competition creating the Phishing sites?
-
-That's just how I feel about it after my experience in writing AI for the first time.
-
-Nothing is perfect in an imperfect world..but what do I know?
+The example below is nearly 55% accuracy. Some URLs shown are pretty well-designed and would
+bypass this AI in the current state.
 
 Have fun,
 
