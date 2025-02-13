@@ -168,14 +168,11 @@ $ python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/ -d
 
 ## Run Phish Hunter
 
-For now, you need to modify this script to include the URLs you want to scan. Soon enough,
-this script will support argparse and/or be created into a lib/.
-
 Eventually, I plan to include an application that can crawl the entire internet, detect 
 websites and scan each while generating results into a report. ....maybe?
 
-Yes, I know after training the model it says the accuracy is 95% but it is not always 95%. 
-..but 95% compared to what, in reality?
+Yes, I know after training the model it says the accuracy is 95%, but it is not always 95%. 
+...on the other hand 95% compared to what, in reality?
 
 I could grab 50 URLs that are obvious to the eye and obtain 100% accuracy in the results.
 I could grab 50 random URLS and get ~50% accuracy.
@@ -188,9 +185,6 @@ types of tools.
 I would...
 
 After all, this is based off of a public, publication...
-
-The example below is nearly 55% accuracy. Some URLs shown are pretty well-designed and would
-bypass this AI in the current state.
 
 Have fun,
 
