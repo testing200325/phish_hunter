@@ -118,18 +118,24 @@ I will come back to this. For now, here is a starting point.
 
 ```bash
 $ python analyze_url.py
-usage: analyze_url [-h] [-u URL]
+usage: analyze_url [-h] [-u URL] [-a] [-d]
 
 Analyze a URL for debugging the Phish Hunter ML AI
 
 options:
   -h, --help         show this help message and exit
   -u URL, --url URL
+  -a, --array
+  -d, --dict
 ```
 
 ```bash
-$ python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/
-Length of URL: 43 : https://welcome-doc-exodus.github.io/en-us/
+$ python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/ -a
+...
+[-1, -1, -1, -1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1, -1, -1, 1, 1, -1, 1]
+
+$ python analyze_url.py -u https://welcome-doc-exodus.github.io/en-us/ -d
+...
 {
     "having_IP_Address": -1,
     "URL_Length": -1,
@@ -145,7 +151,7 @@ Length of URL: 43 : https://welcome-doc-exodus.github.io/en-us/
     "HTTPS_token": -1,
     "Request_URL": -1,
     "URL_of_Anchor": -1,
-    "Links_in_tags": -1,
+    "Links_in_tags": 1,
     "SFH": -1,
     "Submitting_to_email": -1,
     "Abnormal_URL": -1,
@@ -190,6 +196,19 @@ Have fun,
 
 ```bash
 $ python phish_hunter.py
+usage: phish_hunter [-h] [-u URL] [-r] [-a APPEND_DATASET]
+
+Analyze a URL to determine if it may be a Phishing site
+
+options:
+  -h, --help            show this help message and exit
+  -u URL, --url URL
+  -r, --run_internal_links
+  -a APPEND_DATASET, --append_dataset APPEND_DATASET
+```
+
+```bash
+$ python phish_hunter.py -r -a new_dataset.csv
 [-] 1 - https://mondialrelaylivraison.net/ is PHISH: False
 [-] 2 - https://verif0785portal.info/purduefeds is PHISH: False
 [*] 3 - https://www.irs.gov.tax-sioe.com/ is PHISH: True

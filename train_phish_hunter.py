@@ -1,3 +1,5 @@
+#!venv/bin/python
+# -*- coding: utf-8 -*-
 import os
 import sys
 # To perform operations on dataset

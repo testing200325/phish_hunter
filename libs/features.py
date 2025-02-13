@@ -33,6 +33,7 @@
 # 0 if the URL is Suspicious
 
 import re
+import csv
 import whois
 import datetime
 import requests
@@ -160,6 +161,21 @@ class FeatureExtraction:
             self.DNSRecord(),
             self.web_traffic()
         ]
+
+    def append_dataset(self, filename=None, new_row=None):
+        """
+        Adds a new row to a CSV file.
+
+        Args:
+            filename (str): The name of the CSV file.
+            new_row (list): A list representing the new row to add.
+        """
+        try:
+            with open(filename, 'a', newline='\n') as file:
+                writer = csv.writer(file)
+                writer.writerow(new_row)
+        except Exception as e:
+            print(f"An error occurred: {e}")
 
     def having_IP_Address(self):
         """
