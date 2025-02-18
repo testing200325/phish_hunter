@@ -9,9 +9,26 @@ from time import sleep
 p = Predictor()
 
 links = [
-         'https://eocodaswallet.godaddysites.com/',
-         'https://mondialrelay-transit-fr.com/pac/calcul.php'
-         ]
+    'https://www.pkobp.pl/',
+    'https://www.dskdirect.bg/page/default.aspx?xml_id=/bg-BG/.login',
+    'https://mobilephotokiosk.app:443/view/1337',
+    'https://podrozklienta.online/#/app/accept-invitation/emilia.sliwoska@pkobp.pl/1733303090/3xQuib5rvnf_IgW6EvXmVEjNKO4GgvOKapilH9bwAOw~7hCMWXlKgRrv6QPjpqmsyz5P_4RWBKN1mJgtPJiUNRA~',
+    'https://wordpress.com/support/domains/',
+    'https://lbpiaccess.com',
+    'https://104.208.244.222/',
+    'https://eniplenitude.com/my-eni',
+    'https://ebio.gg/@meandyouxq',
+    'https://explorer.walletconnect.com/',
+    'https://www.autenticacao.gov.pt/',
+    'https://ebanking.itauprivatebank.com/',
+    'https://cloudflare-ipfs.org',
+    'https://www.economist.com/',
+    'https://www.nabtrade.com.au/',
+    'https://paypay.ne.jp:443/',
+    'https://www.truist.com/fraud-and-security',
+    'https://releases.jquery.com/'
+
+        ]
 
 
 if __name__ == "__main__":

@@ -69,8 +69,7 @@ class FeatureExtraction:
             self.whois = None
 
         try:
-            self.request = requests.get(self.url, timeout=5, headers={
-                                        "User-Agent": self.user_agent})
+            self.request = requests.get(self.url, timeout=5, headers=self.headers)
             self.soup = BeautifulSoup(self.request.content, 'html.parser')
         except:
             self.request = None
@@ -196,7 +195,7 @@ class FeatureExtraction:
         try:
             ipaddress.ip_address(self.domain)
             return 1
-        except:
+        except Exception as err:
             return -1
 
     def URL_Length(self):
@@ -355,7 +354,7 @@ class FeatureExtraction:
                 return -1
             else:
                 return 1
-        except:
+        except Exception as err:
             if port == 80:
                 port = 443
             elif port == 443:
@@ -388,7 +387,7 @@ class FeatureExtraction:
 
         This isn't even used in the current dataset.
 
-        TODO : Add this is the next dataset
+        TODO : Add this in the next dataset
 
         """
         depth = 0
@@ -407,7 +406,7 @@ class FeatureExtraction:
         End Period of Domain
 
         This feature can be extracted from WHOIS database. For this feature, the
-        remaining domain time is calculated by finding the different between expiration
+        remaining domain time is calculated by finding the difference between expiration
         time & current time. The end period considered for the legitimate domain is 6 months or more for this project.
 
         If end period of domain < 6 months, the value of this feature is 1 (phishing) else -1 (legitimate).
@@ -428,7 +427,7 @@ class FeatureExtraction:
                 return -1
             else:
                 return 1
-        except:
+        except Exception as err:
             return 1
 
     def Favicon(self):
@@ -450,7 +449,7 @@ class FeatureExtraction:
                 return -1
             else:
                 return 1
-        except:
+        except Exception as err:
             return 1
 
     def port(self):
@@ -512,7 +511,7 @@ class FeatureExtraction:
                 return 0
             else:
                 return 1
-        except:
+        except Exception as err:
             return -1
 
     def URL_of_Anchor(self):
@@ -536,7 +535,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return 1
 
     def Links_in_tags(self):
@@ -560,7 +559,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return 1
 
     def SFH(self):
@@ -581,7 +580,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return 0
 
     def Submitting_to_email(self):
@@ -601,7 +600,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return 0
 
     """#### ** Abnormal_URL **
@@ -635,7 +634,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return -1
 
     def on_mouseover(self):
@@ -660,7 +659,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return -1
 
     def RightClick(self):
@@ -686,7 +685,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return -1
 
     def popUpWidnow(self):
@@ -712,7 +711,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return -1
 
     def Iframe(self):
@@ -738,7 +737,7 @@ class FeatureExtraction:
                 return 1
             else:
                 return -1
-        except:
+        except Exception as err:
             return -1
 
     def age_of_domain(self):
@@ -769,7 +768,7 @@ class FeatureExtraction:
                 return -1
             else:
                 return 1
-        except:
+        except Exception as err:
             return 1
 
     def DNSRecord(self):
@@ -789,7 +788,7 @@ class FeatureExtraction:
         try:
             resolver.resolve(self.domain, 'A')
             return -1
-        except:
+        except Exception as err:
             return 1
 
     def web_traffic(self):
@@ -817,5 +816,5 @@ class FeatureExtraction:
                 return -1
             else:
                 return 1
-        except:
+        except Exception as err:
             return 1
