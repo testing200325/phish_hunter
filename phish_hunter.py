@@ -9,6 +9,9 @@ from time import sleep
 p = Predictor()
 
 links = [
+    'https://www.google.com',
+    'https://www.youtube.com',
+    'https://www.twitter.com',
     'https://www.pkobp.pl/',
     'https://www.dskdirect.bg/page/default.aspx?xml_id=/bg-BG/.login',
     'https://mobilephotokiosk.app:443/view/1337',
@@ -26,9 +29,31 @@ links = [
     'https://www.nabtrade.com.au/',
     'https://paypay.ne.jp:443/',
     'https://www.truist.com/fraud-and-security',
-    'https://releases.jquery.com/'
+    'https://releases.jquery.com/',
+    'http://0000000000000000000000000.findyourjacket.com',
+    'http://00000000000000000000000.fielty.mx',
+    'http://00000000000000000update.emy.ba',
+    'http://0000000000c0.x9xcax2a.workers.dev',
+    'http://00000000883838383992929292222.ratingandreviews.in',
+    'http://00000002.c1.biz',
+    'http://0.00000.life/paypal/login.html',
+    'http://0000-1t8.pages.dev',
+    'http://0.0.0.0forum.cryptonight.net',
+    'http://0.0.0.0mailgate.cryptonight.net',
+    'http://0.0.0.0ns10.cryptonight.net',
+    'http://0.0.0.0ssl.cryptonight.net',
+    'http://0001.353527440.workers.dev',
+    'http://0001home.webflow.io',
+    'http://0007854.atwebpages.com/desk/index.html',
+    'http://000811893962007154932393170597959432.hanefra7bikiemta.com',
+    'http://0.0.0assets.cryptonight.net',
+    'http://000chgojhd78jhvbwreuvk.webnode.com',
+    'http://0.0.0dbs.cryptonight.net',
+    'http://000f9e-48.myshopify.com/bigi2001',
+    'http://000ficohs99onli22.125mb.com',
+    'http://0.0.0fileserver.cryptonight.net'
 
-        ]
+]
 
 
 if __name__ == "__main__":
@@ -65,7 +90,8 @@ if __name__ == "__main__":
         # If requested : add new data to the dataset for future training purposes
         if args.append_dataset:
             feature_array.append(result)
-            fe.append_dataset(filename=args.append_dataset, new_row=feature_array)
+            fe.append_dataset(filename=args.append_dataset,
+                              new_row=feature_array)
 
     elif args.run_internal_links:
         # If no URL was passed and we got the run_internal_links switch
@@ -90,7 +116,8 @@ if __name__ == "__main__":
             # If requested : add new data to the dataset for future training purposes
             if args.append_dataset:
                 feature_array.append(result)
-                fe.append_dataset(filename=args.append_dataset, new_row=feature_array)
+                fe.append_dataset(filename=args.append_dataset,
+                                  new_row=feature_array)
 
             count += 1
             sleep(.5)
